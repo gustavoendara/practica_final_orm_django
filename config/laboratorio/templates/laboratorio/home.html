@@ -1,0 +1,12 @@
+{% extends "laboratorio/base_generic.html" %}
+
+{% block content %}
+    <div class="jumbotron text-center my-5">
+        <h1 class="display-4">Bienvenido a la Aplicación de Laboratorios</h1>
+        <p class="lead">Gestiona laboratorios, directores y productos de manera eficiente y rápida.</p>
+        <hr class="my-4">
+        <p>Comienza gestionando los laboratorios o consulta los productos disponibles.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'laboratorio_list' %}" role="button">Ver Laboratorios</a>
+        <a class="btn btn-secondary btn-lg" href="{% url 'laboratorio_create' %}" role="button">Crear Nuevo Laboratorio</a>
+    </div>
+{% endblock %}

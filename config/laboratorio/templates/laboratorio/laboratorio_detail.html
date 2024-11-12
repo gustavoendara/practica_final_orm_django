@@ -1,0 +1,11 @@
+
+{% extends 'laboratorio/base_generic.html' %}
+
+{% block content %}
+  <h1>{{ laboratorio.nombre }}</h1>
+  <p>Ciudad: {{ laboratorio.ciudad }}</p>
+  <p>País: {{ laboratorio.pais }}</p>
+  <a href="{% url 'laboratorio_update' laboratorio.pk %}">Editar</a>
+  <a href="{% url 'laboratorio_delete' laboratorio.pk %}">Eliminar</a>
+  <a href="{% url 'laboratorio_list' %}">Volver a la lista</a>
+{% endblock %}
